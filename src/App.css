@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --font-family: "Noto Serif", serif;
+  --secondary-font-family: "Dancing Script", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body {
+  font-size: var(--font-family);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav-main {
+  padding: 50px 50px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.Nav-main div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.Nav-main div p {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.On-hov {
+  position: relative;
+}
+
+.bot-bor {
+  position: absolute;
+  content: "";
+  width: 14%;
+  height: 1px;
+  background-color: #000;
+  top: 30px;
+}
+.bot-bor1 {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #fff;
+  top: 30px;
+  right: 238px;
+}
+.bot-bor2 {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #fff;
+  top: 30px;
+  right: 162px;
+}
+.bot-bor3 {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 1px;
+  background-color: #857b7b;
+  top: 30px;
+  right: 76px;
+}
+
+.onhov-3:hover .bot-bor1 {
+  background-color: #000 !important;
+  width: 14%;
+  transition: all 0.5s linear;
+}
+
+.onhov-3:hover .bot-bor2 {
+  background-color: #000 !important;
+  width: 14%;
+  transition: all 0.5s linear;
+}
+
+.onhov-3:hover .bot-bor3 {
+  background-color: #000 !important;
+  width: 14%;
+  transition: all 0.5s linear;
+}
+
+.mainheading {
+  font-family: var(--secondary-font-family);
+}
+
+.headingi-c {
+  width: 60px;
+  height: 60px;
+  color: #bbabab;
+}
+
+.mainh-div {
+  padding: 0px 50px;
+}
+
+.paratop {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.smain-d-v {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+}
+
+.smain-d-v h1 {
+  font-family: "Satisfy", cursive;
+  color: #fff;
+}
+
+.parasi {
+  font-family: "Kaushan Script", cursive;
+  font-size: 230px;
+  cursor: pointer;
+  z-index: 20000;
+}
+
+.parasi p:hover {
+  color: #000;
+}
+
+.parasi p {
+  color: #bcb7b7;
+}
+
+.rigt-d {
+  background-color: transparent;
+}
+
+.img1 {
+  width: 100%;
+  height: 700px;
+  background-color: transparent;
+}
+
+.singlepage {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.singlepage p {
+  font-family: "Kaushan Script", cursive;
+  font-size: 230px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alingf-sz p {
+  font-size: 33px;
+  text-align: center;
+  font-weight: 700;
+  z-index: 999;
+  color: #fff;
+}
+
+.img2 {
+  margin-top: 10px;
+  width: 100%;
+  height: 700px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.img3 {
+  height: 500px;
+  width: 100%;
+  margin-top: 90%;
+}
+
+.chng-th {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 200px 20px 200px;
+}
+
+#vedio {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.img3dup{
+  height: 700px;
+  width: 70%;
+  margin-top: 50%;
+  margin-left: 100px;
+}
+
+.sad{
 }
